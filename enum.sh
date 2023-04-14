@@ -82,7 +82,7 @@ if [[ "$ports" == *"445"* ]]; then
     smb_port="445"
     echo " "
     echo "[+] SMB discoverd, enumerating with guest account and no password..."
-    smbclient -L \\\\$Host -u "guest" -p " "
+    smbclient -L \\\\$Host -U "guest" -P " "
 
 fi
 
